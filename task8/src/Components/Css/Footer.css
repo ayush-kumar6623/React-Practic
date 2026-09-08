@@ -1,0 +1,99 @@
+.med-footer {
+  width: 100%;
+  background: #064e3b;
+  color: #ecfdf5;
+  padding: 36px 40px 20px;
+  box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.08);
+  margin-top: auto;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #047857;
+}
+
+.footer-brand {
+  max-width: 320px;
+}
+
+.brand-badge {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #34d399;
+  margin-bottom: 10px;
+}
+
+.footer-brand p {
+  font-size: 13px;
+  color: #a7f3d0;
+  line-height: 1.5;
+}
+
+.footer-emergency h4,
+.footer-compliance h4 {
+  font-size: 15px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 12px;
+}
+
+.footer-emergency p {
+  font-size: 13px;
+  color: #a7f3d0;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer-compliance {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.badge-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #047857;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  color: #d1fae5;
+  font-weight: 500;
+}
+
+.med-logout-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 14px;
+  background: #ef4444;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.med-logout-btn:hover {
+  background: #dc2626;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 18px;
+  font-size: 12px;
+  color: #6ee7b7;
+}

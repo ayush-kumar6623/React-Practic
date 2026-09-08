@@ -1,0 +1,103 @@
+.student-footer {
+  width: 100%;
+  background: #3b0764;
+  color: #fae8ff;
+  padding: 36px 40px 20px;
+  box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.08);
+  margin-top: auto;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #581c87;
+}
+
+.footer-brand {
+  max-width: 320px;
+}
+
+.brand-badge {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #e879f9;
+  margin-bottom: 10px;
+}
+
+.footer-brand p {
+  font-size: 13px;
+  color: #d8b4fe;
+  line-height: 1.5;
+}
+
+.footer-links h4,
+.footer-support h4 {
+  font-size: 15px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 12px;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer-links a {
+  color: #d8b4fe;
+  text-decoration: none;
+  font-size: 13px;
+  transition: color 0.2s;
+}
+
+.footer-links a:hover {
+  color: #f0abfc;
+}
+
+.footer-support {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.footer-support p {
+  font-size: 13px;
+  color: #e9d5ff;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.student-logout-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 14px;
+  background: #ef4444;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.student-logout-btn:hover {
+  background: #dc2626;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 18px;
+  font-size: 12px;
+  color: #c084fc;
+}
