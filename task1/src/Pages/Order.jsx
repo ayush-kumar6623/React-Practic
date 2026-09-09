@@ -3,11 +3,11 @@ import DashboardLayout from '../Components/Dashboardlayout'
 const Order = () => {
   return (
     <>
-            <DashboardLayout />
-            <div className="main-content">
-                <h1>Welcome to Order Page</h1>
-                <p>Order Replaced</p>
-            </div>
+            <DashboardLayout>
+
+              <h1>This is order Page</h1>
+            </DashboardLayout>
+          
         </>
   )
 }

@@ -1,6 +1,3 @@
-/* =========================
-   GLOBAL
-========================= */
 
 * {
     margin: 0;
@@ -13,49 +10,26 @@ body {
     background: #f4f6f9;
 }
 
-
-/* =========================
-   HEADER
-========================= */
-
 .header {
     width: 100%;
     height: 70px;
-
     position: fixed;
     top: 0;
     left: 0;
-
     background: #ffffff;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     padding: 0 30px;
-
     box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
-
     z-index: 1000;
 }
 
 
-/* Logout */
-
-.login a {
-    display: flex;
-    align-items: center;
-    gap: 9px;
-
-    text-decoration: none;
-
-    color: #333;
-
-    font-size: 15px;
-    font-weight: 600;
-
-    transition: 0.3s ease;
+.header .sidebar-close{
+    font-size: 40px;
 }
+
 
 .login a i {
     font-size: 18px;
@@ -65,8 +39,6 @@ body {
     color: #ef4444;
 }
 
-
-/* Welcome Text */
 
 .text {
     font-size: 21px;
@@ -85,11 +57,8 @@ body {
     display: flex;
     align-items: center;
     gap: 10px;
-
     text-decoration: none;
-
     color: #333;
-
     font-size: 15px;
     font-weight: 600;
 }
@@ -97,16 +66,12 @@ body {
 .avtar a i {
     width: 40px;
     height: 40px;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     border-radius: 50%;
-
     background: #4f46e5;
     color: white;
-
     font-size: 18px;
 }
 
@@ -115,30 +80,20 @@ body {
 }
 
 
-/* =========================
-   SIDEBAR
-========================= */
-
 .dashboard {
     width: 250px;
     height: calc(100vh - 70px);
-
     position: fixed;
-
     top: 70px;
     left: 0;
-
     background: #111827;
-
     padding: 25px 15px;
-
     overflow-y: auto;
-
     z-index: 999;
 }
 
 
-/* Navigation */
+
 
 .dashboard nav {
     display: flex;
@@ -146,22 +101,14 @@ body {
 }
 
 
-/* Dashboard Heading */
-
 .dashboard nav h2 {
     color: #ffffff;
-
     font-size: 21px;
-
     display: flex;
     align-items: center;
-
     gap: 12px;
-
     padding: 0 15px 25px;
-
     margin-bottom: 18px;
-
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -169,28 +116,17 @@ body {
     color: #6366f1;
 }
 
-
-/* Sidebar Links */
-
 .dashboard nav a {
     display: flex;
     align-items: center;
-
     gap: 14px;
-
     padding: 14px 16px;
-
     margin-bottom: 8px;
-
     color: #cbd5e1;
-
     text-decoration: none;
-
     border-radius: 9px;
-
     font-size: 15px;
     font-weight: 500;
-
     transition: all 0.3s ease;
 }
 
@@ -199,9 +135,7 @@ body {
 
 .dashboard nav a i {
     width: 22px;
-
     text-align: center;
-
     font-size: 17px;
 }
 
@@ -210,21 +144,31 @@ body {
 
 .dashboard nav a:hover {
     background: red;
-
     color: #ffffff;
-
 }
-
-
 .dashboard nav a.active {
     background: #4f46e5;
     color: #ffffff;
 }
-
-
 .main-content {
     margin-left: 250px;
-
     padding: 100px 35px 30px;
 }
 
+
+.logout button{
+    padding: 15px 60px;
+    font-size: 20px;
+    text-decoration: underline;
+    background-color: transparent;
+    border-radius: 9px;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+
+}
+.logout button:hover{
+    background-color: red;
+}

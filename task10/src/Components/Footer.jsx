@@ -36,7 +36,7 @@ const Footer = () => {
       </div>
 
       <div className="footer-bottom">
-        <p>&copy; {new Date().getFullYear()} RootAdmin Cloud Security Operations. Level 4 Clearance.</p>
+        <p>&copy; {new Date().getFullYear()} RootAdmin Cloud Security Operations. </p>
       </div>
     </footer>
   );

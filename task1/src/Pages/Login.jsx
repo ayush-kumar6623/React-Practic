@@ -26,11 +26,11 @@ const Login = () => {
 
                     <div className="input-box">
                             <label>Email Address</label>
-                            <input type="Email" placeholder='Enter Your Email' onChange={(e)=>setEmail(e.target.value)}/>
+                            <input type="Email" placeholder='ayush@gmail.com' onChange={(e)=>setEmail(e.target.value)}/>
                         </div>
                         <div className="input-box">
                             <label>Password</label>
-                        <input type="password" placeholder='password' onChange={(e)=>setPassword(e.target.value)}/>
+                        <input type="password" placeholder='1234' onChange={(e)=>setPassword(e.target.value)}/>
                         </div>
                         <div className="options">
                             <a href="/">Forgot Password?</a>

@@ -1,15 +1,18 @@
 import React from 'react'
 import DashboardLayout from '../Components/Dashboardlayout'
-const Products = () => {
+const Home = () => {
   return (
     <>
+    
     <DashboardLayout>
-
-      <h1>This is product Page</h1>
+        <h1>welcome To Home Page</h1>
     </DashboardLayout>
-            
+
+    
+   
+    
     </>
   )
 }
 
-export default Products
+export default Home
