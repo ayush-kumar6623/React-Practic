@@ -5,7 +5,7 @@ const Order = () => {
     <>
             <DashboardLayout>
 
-              <h1>This is order Page</h1>
+              <h1>This is Order Page</h1>
             </DashboardLayout>
           
         </>

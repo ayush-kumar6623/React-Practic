@@ -5,7 +5,7 @@ const Home = () => {
     <>
     
     <DashboardLayout>
-        <h1>welcome To Home Page</h1>
+        <h1>Welcome To Home Page</h1>
     </DashboardLayout>
 
     

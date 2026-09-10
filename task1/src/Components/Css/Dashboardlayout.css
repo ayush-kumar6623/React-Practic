@@ -1,14 +1,22 @@
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+html,
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     background: #f4f6f9;
 }
+
+
+/* HEADER */
 
 .header {
     width: 100%;
@@ -20,30 +28,44 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 30px;
+    padding: 0 25px;
+    box-sizing: border-box;
     box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
     z-index: 1000;
 }
 
 
-.header .sidebar-close{
-    font-size: 40px;
+/* MENU */
+
+.sidebar-toggle {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: #4f46e5;
+    cursor: pointer;
+    flex-shrink: 0;
+    transition: 0.3s;
 }
 
-
-.login a i {
-    font-size: 18px;
-}
-
-.login a:hover {
+.sidebar-toggle:hover {
     color: #ef4444;
+    transform: scale(1.1);
 }
 
+
+/* CENTER */
 
 .text {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
     font-size: 21px;
     font-weight: 600;
     color: #222;
+    white-space: nowrap;
 }
 
 .text span {
@@ -51,7 +73,12 @@ body {
 }
 
 
-/* Admin */
+/* ADMIN RIGHT */
+
+.avtar {
+    margin-left: auto;
+    flex-shrink: 0;
+}
 
 .avtar a {
     display: flex;
@@ -61,6 +88,11 @@ body {
     color: #333;
     font-size: 15px;
     font-weight: 600;
+    white-space: nowrap;
+}
+
+.avtar a:hover {
+    color: #4f46e5;
 }
 
 .avtar a i {
@@ -73,11 +105,13 @@ body {
     background: #4f46e5;
     color: white;
     font-size: 18px;
+    flex-shrink: 0;
 }
 
-.avtar a:hover {
-    color: #4f46e5;
-}
+
+
+
+
 
 
 .dashboard {
@@ -90,9 +124,18 @@ body {
     padding: 25px 15px;
     overflow-y: auto;
     z-index: 999;
+    transition: left 0.4s ease;
+}
+
+.dashboard.show {
+    left: 0;
 }
 
 
+
+.dashboard.hide {
+    left: -250px;
+}
 
 
 .dashboard nav {
@@ -100,6 +143,8 @@ body {
     flex-direction: column;
 }
 
+
+/* Dashboard Heading */
 
 .dashboard nav h2 {
     color: #ffffff;
@@ -116,6 +161,7 @@ body {
     color: #6366f1;
 }
 
+
 .dashboard nav a {
     display: flex;
     align-items: center;
@@ -131,7 +177,7 @@ body {
 }
 
 
-/* Sidebar Icons */
+/* Icons */
 
 .dashboard nav a i {
     width: 22px;
@@ -140,35 +186,67 @@ body {
 }
 
 
-/* Hover */
 
 .dashboard nav a:hover {
-    background: red;
+    background: #1f2937;
     color: #ffffff;
+    transform: translateX(5px);
 }
+
+
+/* Active */
+
 .dashboard nav a.active {
     background: #4f46e5;
     color: #ffffff;
-}
-.main-content {
-    margin-left: 250px;
-    padding: 100px 35px 30px;
+    box-shadow: 0 5px 15px rgba(79, 70, 229, 0.3);
 }
 
 
-.logout button{
-    padding: 15px 60px;
-    font-size: 20px;
-    text-decoration: underline;
-    background-color: transparent;
+/* Active Icon */
+
+.dashboard nav a.active i {
+    color: #ffffff;
+}
+
+.logout {
+    margin-top: 30px;
+}
+
+.logout button {
+    width: 100%;
+    padding: 13px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    background: transparent;
+    border: 1px solid #374151;
     border-radius: 9px;
     color: white;
     cursor: pointer;
+
     display: flex;
     align-items: center;
+    justify-content: center;
+    gap: 10px;
     transition: all 0.3s ease;
-
 }
-.logout button:hover{
-    background-color: red;
+.logout button:hover {
+    background-color: #ef4444;
+    border-color: #ef4444;
+    transform: translateY(-2px);
+}
+
+.main-content {
+    min-height: 100vh;
+    margin-left: 250px;
+    padding: 100px 35px 30px;
+    transition: margin-left 0.4s ease;
+}
+
+
+.main-content.with-sidebar {
+    margin-left: 250px;
+}
+.main-content.full-content {
+    margin-left: 0;
 }

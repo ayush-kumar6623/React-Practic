@@ -7,7 +7,7 @@ const Contact = () => {
     <>
             <DashboardLayout>
               <h1>Welcome to Contact</h1>
-                <p>Contact us</p>
+              
             </DashboardLayout>
           
         </>

@@ -5,7 +5,7 @@ const Products = () => {
     <>
     <DashboardLayout>
 
-      <h1>This is product Page</h1>
+      <h1>This is Product Page</h1>
     </DashboardLayout>
             
     </>
