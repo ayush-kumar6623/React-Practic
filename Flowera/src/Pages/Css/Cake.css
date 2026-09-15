@@ -1,0 +1,157 @@
+.cake {
+    width: 90%;
+    margin: 30px auto;
+}
+
+.cake h2 {
+    text-align: center;
+    color: #333;
+    font-size: 34px;
+    font-weight: 500;
+    margin-bottom: 32px;
+}
+
+.cake-container {
+    display: flex;
+    gap: 18px;
+    justify-content: center;
+}
+
+.cake-card {
+    width: 305px;
+    height: 525px;
+    border: 1px solid #eee;
+    border-radius: 7px;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.08);
+    font-family: Arial, sans-serif;
+}
+
+.cake-img-wrapper {
+    width: 100%;
+    height: 305px;
+    position: relative;
+    overflow: hidden;
+}
+
+.cake-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: 0.3s ease;
+}
+
+.cake-img-wrapper img:hover {
+    transform: translateY(-10px);
+}
+
+.cake-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background-color: #5c1a33;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.cake-info {
+    padding: 12px 12px 5px;
+    height: 30px;
+}
+
+.cake-info p {
+    margin: 0;
+    font-size:15px;
+    color: #666;
+}
+
+.cake-price-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px;
+}
+
+.cake-new-price {
+    font-size: 24px;
+    font-weight: 700;
+    color: #111;
+}
+
+.cake-old-price {
+    font-size: 16px;
+    color: #888;
+    text-decoration: line-through;
+    margin-left: 8px;
+}
+
+.cake-cart-btn {
+    width: 50px;
+    height: 44px;
+    border: none;
+    border-radius: 6px;
+    background-color: #5c1a33;
+    color: white;
+    font-size: 19px;
+    cursor: pointer;
+}
+
+.cake-delivery {
+    margin: 0;
+    padding: 0 12px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+}
+
+.cake-delivery span {
+    color: #55ad5c;
+}
+
+.cake-weight {
+    display: flex;
+    gap: 8px;
+    padding:10px;
+}
+
+.cake-weight button {
+    background: white;
+    border: 1px solid #9c4661;
+    border-radius: 3px;
+    padding: 3px 9px;
+    color: #333;
+    cursor: pointer;
+    font-size: 10px;
+}
+
+.cake-rating-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 12px 15px;
+}
+
+.cake-rating {
+    color: #ed7215;
+    font-size: 16px;
+}
+
+.cake-reviews {
+    color: #888;
+    font-size: 14px;
+}
+
+@media (max-width: 1200px) {
+    .cake-container {
+        flex-wrap: wrap;
+    }
+}

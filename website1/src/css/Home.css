@@ -1,0 +1,153 @@
+.home-page {
+  display: flex;
+  flex-direction: column;
+}
+
+.intro-section {
+  padding: 50px 0;
+  background-color: #ffffff;
+  text-align: center;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.intro-container {
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.section-heading {
+  font-size: 28px;
+  color: #111827;
+  margin-bottom: 14px;
+}
+
+.intro-text {
+  font-size: 16px;
+  color: #555555;
+  line-height: 1.7;
+  margin-bottom: 22px;
+}
+
+.intro-cta {
+  display: flex;
+  justify-content: center;
+}
+
+.home-services-section {
+  background-color: #f8f9fa;
+  padding: 40px 0;
+}
+
+.services-preview-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-bottom: 30px;
+}
+
+.service-preview-card {
+  background-color: #ffffff;
+  padding: 25px 20px;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+  text-align: center;
+}
+
+.service-icon {
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+
+.service-preview-card h3 {
+  font-size: 18px;
+  color: #111827;
+  margin-bottom: 8px;
+}
+
+.service-preview-card p {
+  font-size: 14px;
+  color: #666666;
+  line-height: 1.5;
+}
+
+.home-gallery-section {
+  background-color: #ffffff;
+  padding: 40px 0;
+}
+
+.gallery-preview-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.gallery-preview-card {
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+  background-color: #ffffff;
+}
+
+.gallery-preview-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.preview-caption {
+  padding: 8px 12px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #333333;
+  text-align: center;
+}
+
+.section-center-btn {
+  display: flex;
+  justify-content: center;
+}
+
+.home-cta-section {
+  padding: 50px 0;
+  background-color: #eef6ff;
+  text-align: center;
+  border-top: 1px solid #dbeafe;
+}
+
+.cta-container {
+  width: 90%;
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.cta-container h2 {
+  font-size: 26px;
+  color: #111827;
+  margin-bottom: 10px;
+}
+
+.cta-container p {
+  font-size: 15px;
+  color: #555555;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 860px) {
+  .services-preview-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-preview-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery-preview-grid {
+    grid-template-columns: 1fr;
+  }
+}

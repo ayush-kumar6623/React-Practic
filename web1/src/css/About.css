@@ -1,0 +1,133 @@
+.about-page {
+  width: 100%;
+  padding: 60px 24px;
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.about-text-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-tag {
+  color: #ff6b00;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.about-title {
+  color: #ffffff;
+  font-size: 42px;
+  font-weight: 800;
+  margin: 0 0 18px;
+  line-height: 1.2;
+}
+
+.about-intro {
+  color: #cccccc;
+  font-size: 17px;
+  line-height: 1.7;
+  margin-bottom: 28px;
+}
+
+.about-section-block {
+  background-color: #181818;
+  border: 1px solid #282828;
+  border-left: 4px solid #ff6b00;
+  border-radius: 8px;
+  padding: 20px 24px;
+  margin-bottom: 20px;
+}
+
+.block-title {
+  color: #ffffff;
+  font-size: 19px;
+  font-weight: 700;
+  margin: 0 0 8px;
+}
+
+.block-text {
+  color: #aaaaaa;
+  font-size: 15px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.about-btn-wrap {
+  margin-top: 14px;
+}
+
+.about-image-col {
+  display: flex;
+  justify-content: center;
+}
+
+.about-image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 520px;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid #282828;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+}
+
+.about-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about-experience-badge {
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
+  background-color: #161616;
+  border: 1px solid #ff6b00;
+  padding: 14px 20px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+}
+
+.badge-num {
+  color: #ff6b00;
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.badge-lbl {
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+@media (max-width: 900px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .about-title {
+    font-size: 32px;
+  }
+
+  .about-image-wrapper {
+    height: 380px;
+  }
+}

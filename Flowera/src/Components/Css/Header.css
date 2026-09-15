@@ -1,0 +1,160 @@
+.header-top-outer {
+    height: 20px;
+    width: 90%;
+    margin: 10px auto;
+    background-color: white;
+    color: #333333;
+
+    display: flex;
+    align-items: center;
+    justify-content: end;
+
+    gap: 20px;
+    font-size: 18px;
+    padding: 0 20px;
+}
+
+.header-main-outer {
+    height: 80px;
+    width: 90%;
+    margin: 0 auto;
+
+    color: #333333;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 100%;
+}
+
+.logo img {
+    height: 100%;
+    width: auto;
+    display: block;
+}
+
+/* Search Outer */
+
+.search-outer {
+    height: 50px;
+    width: 40%;
+    display: flex;
+    border: 2px solid #5D1C32;
+    border-radius: 12px;
+
+}
+
+.header-search-input {
+    height: 100%;
+    width: 85%;
+    
+    border: none;
+    outline: none;
+
+    padding: 0 20px;
+    font-size: 16px;
+    color: #333333;
+
+    border-radius: 10px 0 0 10px;
+    box-sizing: border-box;
+}
+
+.search-icon {
+    height: 100%;
+    width: 15%;
+
+    background-color: #5D1C32;
+
+    border-radius: 0 10px 10px 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+    cursor: pointer;
+}
+
+
+/* header btn */
+
+.header-btns{
+    height: 100%;
+    width: 20%;
+    display: flex;
+}
+
+
+.header-login-btn{
+    height: 100%;
+    width: 20%;
+    color: black;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.header-login-btn span{
+    color: #5D1C32;
+    font-weight: 600;
+
+}
+
+.header-cart-btn span{
+    color: #5D1C32;
+    font-weight: 600;
+
+}
+.header-cart-btn{
+    height: 100%;
+    width: 50%;
+    font-size: 20px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.header-bottom-menu{
+    height: 40px;
+    width: 100%;
+    background-color: #5D1C32;
+
+}
+.header-cart-count{
+    position: absolute;
+    top: 2px;
+    left: 72px;
+    color: white !important;
+    background-color: #5D1C32;
+    font-size: 18px !important;
+    font-weight: 400;
+    height: 20px;
+    width: 20px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    border-radius: 50%;
+
+
+}
+.header-bottom-menu ul{
+
+    height: 100%;
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 50px;
+
+}
+.navlinks{
+    color: white;
+    text-decoration: none;
+}

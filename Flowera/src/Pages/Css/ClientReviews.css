@@ -1,0 +1,124 @@
+.client-reviews {
+    width: 100%;
+    min-height: 560px;
+    background-color: #fff0f6;
+    padding: 35px 0 50px;
+    box-sizing: border-box;
+}
+
+.client-reviews h2 {
+    text-align: center;
+    font-size: 34px;
+    font-weight: 500;
+    color: #333;
+    margin: 0 0 78px;
+}
+
+.review-container {
+    width: 84%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 38px;
+}
+
+.review-card {
+    width: 33.33%;
+    min-height: 250px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    position: relative;
+    padding: 92px 25px 25px;
+    box-sizing: border-box;
+}
+.user{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+}
+.quote-left {
+    position: absolute;
+    top: -32px;
+    left: 25px;
+    font-size: 55px;
+    color: #9aa85d;
+}
+
+.client {
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.client-icon {
+    font-size: 94px;
+    color: #999;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.client h3 {
+    margin: 5px 0 0;
+    font-size: 19px;
+    color: #9aa85d;
+}
+
+.review-card h4 {
+    margin: 5px 0 20px;
+    font-size: 18px;
+    color: #444;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+.review-card p {
+    margin: 0;
+    color: #777;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.review-dots {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 22px;
+}
+
+.review-dots span {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #ddd;
+}
+
+.review-dots .active-dot {
+    background-color: #641a37;
+}
+
+@media (max-width: 1000px) {
+    .review-container {
+        flex-wrap: wrap;
+    }
+
+    .review-card {
+        width: 47%;
+    }
+}
+
+@media (max-width: 650px) {
+    .review-container {
+        width: 90%;
+    }
+
+    .review-card {
+        width: 100%;
+    }
+
+    .client-reviews h2 {
+        font-size: 28px;
+    }
+}

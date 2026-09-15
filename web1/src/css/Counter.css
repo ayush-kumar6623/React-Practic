@@ -1,0 +1,60 @@
+.counter-section {
+  background-color: #161616;
+  padding: 48px 24px;
+  border-top: 1px solid #242424;
+  border-bottom: 1px solid #242424;
+}
+
+.counter-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  text-align: center;
+}
+
+.counter-item {
+  padding: 20px 16px;
+  background-color: #1a1a1a;
+  border-radius: 12px;
+  border: 1px solid #282828;
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.counter-item:hover {
+  border-color: #ff6b00;
+  transform: translateY(-3px);
+}
+
+.counter-number {
+  font-size: 38px;
+  font-weight: 900;
+  color: #ff6b00;
+  margin-bottom: 6px;
+  letter-spacing: -0.5px;
+}
+
+.counter-label {
+  color: #aaaaaa;
+  font-size: 15px;
+  font-weight: 500;
+  margin: 0;
+}
+
+@media (max-width: 850px) {
+  .counter-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .counter-container {
+    grid-template-columns: 1fr;
+  }
+
+  .counter-number {
+    font-size: 32px;
+  }
+}

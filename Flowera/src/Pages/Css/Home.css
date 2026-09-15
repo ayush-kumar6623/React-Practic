@@ -1,0 +1,43 @@
+.slider-outer {
+    width: 100%;
+
+}
+
+.slider-image {
+    width: 100%;
+    object-fit: cover;
+
+
+}
+
+.category-card-home-outer {
+    width: 90%;
+    margin: 30px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 15px;
+}
+
+.first-image img {
+    border-radius: 5px;
+}
+
+.second-image img {
+    border-radius: 5px;
+}
+
+.why-choose {
+    width: 90%;
+    margin: 20px auto;
+    position: relative;
+    height: 330px;
+}
+.why-choose img {
+    width: 98%;
+    position: absolute;
+    left: 10px;
+    display: block;
+    border-radius: 5px;
+}
+

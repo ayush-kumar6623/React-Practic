@@ -1,0 +1,36 @@
+.category-card-outer{
+    height: 300px;
+    width: 250px;
+    box-shadow: 0px 0px 10px rgb(192, 191, 191);
+    border-radius: 10px;
+    
+
+
+}
+.category-card-image{
+    height: 80%;
+    width: 100%;
+    
+}
+.category-card-image img{
+    height: 100%;
+    width: 100%;
+}
+.category-card-text{
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.middle-image-outer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.middle-image-outer .first-image img{
+    height: 360px;
+}
+.middle-image-outer .second-image img{
+    height: 360px;
+}

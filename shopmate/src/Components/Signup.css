@@ -1,0 +1,229 @@
+* {
+    box-sizing: border-box;
+}
+
+.signup-page {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    padding: 22px 24px;
+    background: #f7f8fa;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.signup-left {
+    width: 50%;
+    min-height: calc(100vh - 44px);
+    background: #ff6808;
+    border-radius: 20px 0 0 20px;
+    overflow: hidden;
+}
+
+.signup-image {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.signup-right {
+    width: 50%;
+    min-height: calc(100vh - 44px);
+    background: white;
+    border-radius: 0 20px 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 35px 65px;
+}
+
+.form-container {
+    width: 100%;
+    max-width: 620px;
+}
+
+.form-container h1 {
+    text-align: center;
+    font-size: 36px;
+    color: #172033;
+    margin: 0 0 10px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #777;
+    font-size: 17px;
+    margin: 0 0 35px;
+}
+
+.form-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 17px 30px;
+}
+
+.input-group {
+    width: 100%;
+}
+
+.full-width {
+    grid-column: span 2;
+}
+
+.input-group label {
+    display: block;
+    font-size: 15px;
+    font-weight: 600;
+    color: #202020;
+    margin-bottom: 7px;
+}
+
+.input-wrapper {
+    width: 100%;
+    height: 55px;
+    border: 1px solid #ddd;
+    border-radius: 9px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 0 15px;
+    color: #89909a;
+}
+
+.input-wrapper:focus-within {
+    border-color: #ed5d11;
+}
+
+.input-wrapper input,
+.input-wrapper select {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 15px;
+    color: #555;
+}
+
+.input-wrapper input::placeholder {
+    color: #aaa;
+}
+
+.input-wrapper select {
+    appearance: none;
+    cursor: pointer;
+}
+
+.select-icon {
+    font-size: 12px;
+}
+
+.eye-btn {
+    border: none;
+    background: transparent;
+    color: #777;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.terms {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 18px 0;
+}
+
+.terms input {
+    width: 18px;
+    height: 18px;
+    accent-color: #ed5d11;
+}
+
+.terms label {
+    font-size: 13px;
+    color: #555;
+}
+
+.terms span {
+    color: #ed5d11;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+.create-btn {
+    width: 100%;
+    height: 57px;
+    border: none;
+    border-radius: 8px;
+    background: #ff6808;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.create-btn:hover {
+    background: #e85d05;
+}
+
+.or {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 18px 0;
+}
+
+.or span {
+    flex: 1;
+    height: 1px;
+    background: #ddd;
+}
+
+.or p {
+    color: #777;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.social-btn {
+    width: 100%;
+    height: 45px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: white;
+    margin-bottom: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    font-size: 15px;
+    color: #222;
+    cursor: pointer;
+}
+
+.social-btn:hover {
+    background: #fafafa;
+}
+
+.social-btn:first-of-type svg {
+    color: #4285f4;
+}
+
+.social-btn:last-of-type svg {
+    color: #1877f2;
+}
+
+.login-text {
+    text-align: center;
+    color: #777;
+    font-size: 14px;
+    margin-top: 18px;
+}
+
+.login-text a {
+    color: #ed5d11;
+    font-weight: 600;
+    margin-left: 5px;
+    text-decoration: none;
+}

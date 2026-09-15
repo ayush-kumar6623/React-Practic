@@ -1,0 +1,97 @@
+.category-card {
+  background-color: #1a1a1a;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #282828;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  position: relative;
+}
+
+.category-card:hover {
+  border-color: #ff6b00;
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.5);
+}
+
+.category-image-container {
+  width: 100%;
+  height: 180px;
+  position: relative;
+  overflow: hidden;
+  background-color: #222222;
+}
+
+.large-card .category-image-container {
+  height: 240px;
+}
+
+.category-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.category-card:hover .category-img {
+  transform: scale(1.05);
+}
+
+.category-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(180deg, transparent 50%, rgba(18, 18, 18, 0.8) 100%);
+}
+
+.category-info {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background-color: #1a1a1a;
+  flex-grow: 1;
+}
+
+.category-name {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.category-desc {
+  color: #aaaaaa;
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.category-arrow-btn {
+  color: #ff6b00;
+  font-size: 13px;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 4px;
+  transition: gap 0.2s ease;
+}
+
+.category-card:hover .category-arrow-btn {
+  gap: 10px;
+}
+
+.category-btn-wrap {
+  margin-top: 12px;
+}
+
+.category-explore-btn {
+  width: 100%;
+  padding: 10px 16px;
+  font-size: 14px;
+}
